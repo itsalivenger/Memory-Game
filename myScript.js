@@ -25,13 +25,16 @@ for (var i = 0; i < imgNb; i++) {
 
     imgC.id = 'img' + sum;
     imgC.src = 'images/image' + sum + '.png';
-    document.getElementsByClassName('choicesDiv')[i].style.backgroundColor = '#0e3e8c';
+    document.getElementsByClassName('choicesDiv')[i].style.backgroundColor = '#3273dbc2';
+    document.getElementsByClassName('choicesDiv')[i].style.borderRadius = '20px';
 }
 for (var i = 1; i < 3; i++) {
     var khyar = document.createElement('img');
-    document.getElementById('qnsImage' + i).appendChild(khyar);
+    let currentImg = document.getElementById('qnsImage' + i);
+    currentImg.appendChild(khyar);
     khyar.id = 'imgC' + i;
-    document.getElementsByClassName('qnsDiv')[i - 1].style.backgroundColor = '#0e3e8c';
+    document.getElementsByClassName('qnsDiv')[i - 1].style.backgroundColor = '#3273dbc2';
+    document.getElementsByClassName('qnsDiv')[i - 1].style.borderRadius = '20px';
 }
 function restart(){
     ctrl = 1;
