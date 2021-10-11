@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Lab Report 2020</title>
+<script src="jquery.js"></script>
+
+<style>
+body{
+    font-size: 10pt;
+    font-family: "Arial", "sans-serif";
+    text-align: center;
+    background-color: #0e3e8c;
+    color: #ffffff;
+}
+    
+table {
+    margin-top:10px;
+    margin-left:auto; 
+    margin-right:auto;
+    width:50%
+}
+    
+#choices td {
+    width: 600px;
+    height:120px;
+    border: 1px solid #ffffff;
+    text-align: center;
+    
+}
+
+td {
+    width: 600px;
+    border: 1px solid #ffffff;
+    text-align: center;
+}
+    
+.choicesDiv, .qnsDiv {
+    width:150px;
+    height:150px;
+    background-color:#000000;
+    margin: 5x;
+    display: inline-block;
+}
+    
+.qnstxt {
+   
+    margin: 0 auto;
+    color: #ad1717;
+    font-size: 24pt;
+    background-color: #ffffff;
+    text-align: center;
+    height: 35px;
+    width:80%;
+}
+    
+</style>
+</head>
+
+<body> 
+<H3><span id="titleTxt"></span></H3>
+
+<table>
+<tr> 
+</tr>
+<tr>
+<td >Score :</td>
+<td><span id='hitTxt'>0</span></td>
+</tr>
+</table>    
+    
+<table id="qnsTable">   
+<tr>
+<td><H3>Animal One</H3></td>
+<td><H3>Animal Two</H3></td>       
+</tr>
+    
+<tr><td>
+<div id="qnsImage1" class="qnsDiv"></div>
+</td>
+<td>
+<div id="qnsImage2" class="qnsDiv"></div>
+</td>
+</tr>
+<tr>
+<td><div id="txtDiv1" class="qnstxt"><span></span></div></td>
+<td><div id="txtDiv2" class="qnstxt"><span></span></div></td>       
+</tr>
+<tr>
+<td colspan="2"><button id="nextBtn">NEXT</button></td>
+</tr>
+</table>    
+    
+<table id="choices">
+<tr>
+<td><div class="choicesDiv" value=1></div></td>
+<td><div class="choicesDiv" value=2></div></td>
+<td><div class="choicesDiv" value=3></div></td>
+<td><div class="choicesDiv" value=4></div></td>
+<td><div class="choicesDiv" value=5></div></td>
+</tr>
+<tr>
+<td><div class="choicesDiv" value=6></div></td>
+<td><div class="choicesDiv" value=7></div></td>
+<td><div class="choicesDiv" value=8></div></td>
+<td><div class="choicesDiv" value=9></div></td>
+<td><div class="choicesDiv" value=10></div></td>
+</tr>
+</table>
+
+<script src="myScript.js"></script>
+</body>
+</html>
